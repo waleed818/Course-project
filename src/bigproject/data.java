@@ -43,5 +43,9 @@ public class data {
 	         
 	        
 	       String Theexpectedlogin = "Welcome back "+thefirstname ;
+
+
+     String Waleed = "my waleed";
+
 }
 
