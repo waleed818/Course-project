@@ -159,41 +159,33 @@ public class testbig extends data {
 		
 		driver.navigate().to("https://automationteststore.com/");
 		
-		      Random rand = new Random();
-		
-		    List <WebElement> Allitems = driver.findElements(By.className("prdocutname"));
-				
-		      int randomitem = rand.nextInt(Allitems.size());
-		
-		       Allitems.get(randomitem).click();
-		       
-		       
-		       while (driver.getPageSource().contains("Out of Stock")||driver.getCurrentUrl().contains("product_id=116")) {
-		    	   
-		    	     driver.navigate().back();		    	     
-		    			
-		    	   List <WebElement> Alternativitems = driver.findElements(By.className("prdocutname"));
-		    	   
-		    	   int randomListAlternativitems = rand.nextInt(Alternativitems.size());
-		      
-		    	   Alternativitems.get(randomListAlternativitems).click();
-		       
-		       
-		       
-		       }
-		       
-		       
-		
-		       WebElement addcartbotton = driver.findElement(By.cssSelector(".cart"));
-		       
-		       addcartbotton.click();
-		       
-		       
-		       
-		       
-		       
-		       
-		       
+		   Random rand = new Random();
+		   
+		 for (int i = 0 ; i < 10 ; i++) {
+			 
+			 List <WebElement> additem = driver.findElements(By.className("prdocutname"));
+			 
+			 int randomitem = rand.nextInt(additem.size());
+			 
+			 additem.get(randomitem).click();
+			 
+			 
+			 boolean Outofstouk = driver.getPageSource().contains("Out of Stock");
+			 
+			 
+			 if (! Outofstouk) {
+				 
+				 driver.findElement(By.cssSelector(".cart")).click();
+				 
+				 return;
+			 }
+			 
+			 driver.navigate().back();
+		 }
+		 
+			 throw new RuntimeException("No Found item");
+			 
+		 
 	}
 	
 	

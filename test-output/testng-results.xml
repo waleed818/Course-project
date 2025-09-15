@@ -2,20 +2,20 @@
 <testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-15T03:22:49 EET" name="Default suite" finished-at="2025-09-15T03:22:58 EET" duration-ms="8986">
+  <suite started-at="2025-09-15T23:23:43 EET" name="Default suite" finished-at="2025-09-15T23:23:55 EET" duration-ms="11959">
     <groups>
     </groups>
-    <test started-at="2025-09-15T03:22:49 EET" name="Default test" finished-at="2025-09-15T03:22:58 EET" duration-ms="8986">
+    <test started-at="2025-09-15T23:23:43 EET" name="Default test" finished-at="2025-09-15T23:23:55 EET" duration-ms="11959">
       <class name="bigproject.testbig">
-        <test-method is-config="true" signature="geturl()[pri:0, instance:bigproject.testbig@7e5d9a50]" started-at="2025-09-15T03:22:49 EET" name="geturl" finished-at="2025-09-15T03:22:51 EET" duration-ms="2044" status="PASS">
+        <test-method is-config="true" signature="geturl()[pri:0, instance:bigproject.testbig@60957c0f]" started-at="2025-09-15T23:23:43 EET" name="geturl" finished-at="2025-09-15T23:23:45 EET" duration-ms="2022" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- geturl -->
-        <test-method signature="additmes()[pri:4, instance:bigproject.testbig@7e5d9a50]" started-at="2025-09-15T03:22:51 EET" name="additmes" finished-at="2025-09-15T03:22:58 EET" duration-ms="6905" status="PASS">
+        <test-method signature="additmes()[pri:4, instance:bigproject.testbig@60957c0f]" started-at="2025-09-15T23:23:45 EET" name="additmes" finished-at="2025-09-15T23:23:55 EET" duration-ms="9896" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- additmes -->
-        <test-method is-config="true" signature="After()[pri:0, instance:bigproject.testbig@7e5d9a50]" started-at="2025-09-15T03:22:58 EET" name="After" finished-at="2025-09-15T03:22:58 EET" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="After()[pri:0, instance:bigproject.testbig@60957c0f]" started-at="2025-09-15T23:23:55 EET" name="After" finished-at="2025-09-15T23:23:55 EET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- After -->
