@@ -7,6 +7,7 @@ import java.util.Random;
 import java.util.List;   
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriver.Navigation;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.Select;
@@ -34,7 +35,7 @@ public class testbig extends data {
 
 	}
     
-	@Test (priority = 1,enabled = true)
+	@Test (priority = 1,enabled = false)
 	public void signup () throws InterruptedException {
 		
 		
@@ -105,7 +106,7 @@ public class testbig extends data {
 	}
 
 	
-	@Test (priority = 2,enabled = true)
+	@Test (priority = 2,enabled = false)
 	
 	public  void logout () {
 		
@@ -126,7 +127,7 @@ public class testbig extends data {
 	}
 	
 	
-	@Test (priority = 3)
+	@Test (priority = 3,enabled = false)
 	
 	public void Login () {
 		
@@ -152,7 +153,7 @@ public class testbig extends data {
 		
 	}
 	
-	@Test (priority = 4)
+	@Test (priority = 4,enabled = true)
 	
 	public void additmes () {
 		
@@ -165,7 +166,36 @@ public class testbig extends data {
 		      int randomitem = rand.nextInt(Allitems.size());
 		
 		       Allitems.get(randomitem).click();
+		       
+		       
+		       while (driver.getPageSource().contains("Out of Stock")||driver.getCurrentUrl().contains("product_id=116")) {
+		    	   
+		    	     driver.navigate().back();		    	     
+		    			
+		    	   List <WebElement> Alternativitems = driver.findElements(By.className("prdocutname"));
+		    	   
+		    	   int randomListAlternativitems = rand.nextInt(Alternativitems.size());
+		      
+		    	   Alternativitems.get(randomListAlternativitems).click();
+		       
+		       
+		       
+		       }
+		       
+		       
+		
+		       WebElement addcartbotton = driver.findElement(By.cssSelector(".cart"));
+		       
+		       addcartbotton.click();
+		       
+		       
+		       
+		       
+		       
+		       
+		       
 	}
+	
 	
 	
 	
