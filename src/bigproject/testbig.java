@@ -1,13 +1,15 @@
 package bigproject;
 
-import static org.testng.Assert.assertEquals;
-
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.time.Duration;
 import java.util.Random;
 import java.util.List;   
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebDriver.Navigation;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.Select;
@@ -25,14 +27,21 @@ public class testbig extends data {
 	
 
 	WebDriver driver = new EdgeDriver();
+	
+	Connection con ;
+    Statement stmt ;
+    ResultSet rs ;
+	
 
 	@BeforeTest
-	public void geturl() {
+	public void geturl() throws SQLException {
 
 		driver.get("https://automationteststore.com/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
+		con = DriverManager.getConnection("jdbc:mysql://localhost:3306/classicmodel","root","root");
+		
 	}
     
 	@Test (priority = 1,enabled = false)
