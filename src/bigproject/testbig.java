@@ -28,10 +28,6 @@ public class testbig extends data {
 
 	WebDriver driver = new EdgeDriver();
 	
-	Connection con ;
-    Statement stmt ;
-    ResultSet rs ;
-	
 
 	@BeforeTest
 	public void geturl() throws SQLException {
@@ -40,7 +36,7 @@ public class testbig extends data {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
-		con = DriverManager.getConnection("jdbc:mysql://localhost:3306/classicmodel","root","root");
+		
 		
 	}
     
@@ -181,7 +177,7 @@ public class testbig extends data {
 			 
 			 boolean Outofstouk = driver.getPageSource().contains("Out of Stock");
 			 
-			 
+			
 			 if (! Outofstouk) {
 				 
 				 driver.findElement(By.cssSelector(".cart")).click();
