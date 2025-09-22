@@ -1,21 +1,421 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="0" failed="0" skipped="8">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-17T21:21:12 EET" name="Default suite" finished-at="2025-09-17T21:21:22 EET" duration-ms="9856">
+  <suite started-at="2025-09-20T21:05:17 EET" name="Default suite" finished-at="2025-09-20T21:05:18 EET" duration-ms="1183">
     <groups>
     </groups>
-    <test started-at="2025-09-17T21:21:12 EET" name="Default test" finished-at="2025-09-17T21:21:22 EET" duration-ms="9856">
-      <class name="bigproject.testbig">
-        <test-method is-config="true" signature="geturl()[pri:0, instance:bigproject.testbig@2dd29a59]" started-at="2025-09-17T21:21:12 EET" name="geturl" finished-at="2025-09-17T21:21:15 EET" duration-ms="2750" status="PASS">
+    <test started-at="2025-09-20T21:05:17 EET" name="Default test" finished-at="2025-09-20T21:05:18 EET" duration-ms="1183">
+      <class name="bigproject.webelement">
+        <test-method is-config="true" signature="geturl()[pri:0, instance:bigproject.webelement@180da663]" started-at="2025-09-20T21:05:18 EET" name="geturl" finished-at="2025-09-20T21:05:18 EET" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- geturl -->
-        <test-method signature="additmes()[pri:4, instance:bigproject.testbig@2dd29a59]" started-at="2025-09-17T21:21:15 EET" name="additmes" finished-at="2025-09-17T21:21:22 EET" duration-ms="7051" status="PASS">
+      </class> <!-- bigproject.webelement -->
+      <class name="bigproject.Database">
+        <test-method is-config="true" signature="geturl()[pri:0, instance:bigproject.Database@229f66ed]" started-at="2025-09-20T21:05:17 EET" name="geturl" finished-at="2025-09-20T21:05:18 EET" duration-ms="1057" status="FAIL">
+          <exception class="java.sql.SQLSyntaxErrorException">
+            <message>
+              <![CDATA[Unknown database 'classicmodel']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.sql.SQLSyntaxErrorException: Unknown database 'classicmodel'
+at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:839)
+at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:415)
+at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+at bigproject.Database.geturl(Database.java:28)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+at org.testng.TestRunner.run(TestRunner.java:612)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.sql.SQLSyntaxErrorException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- geturl -->
+        <test-method signature="CreateData()[pri:0, instance:bigproject.Database@229f66ed]" started-at="2025-09-20T21:05:18 EET" name="CreateData" finished-at="2025-09-20T21:05:18 EET" duration-ms="0" status="SKIP">
+          <exception class="java.sql.SQLSyntaxErrorException">
+            <message>
+              <![CDATA[Unknown database 'classicmodel']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.sql.SQLSyntaxErrorException: Unknown database 'classicmodel'
+at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:839)
+at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:415)
+at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+at bigproject.Database.geturl(Database.java:28)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+at org.testng.TestRunner.run(TestRunner.java:612)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.sql.SQLSyntaxErrorException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateData -->
+        <test-method signature="deletData()[pri:0, instance:bigproject.Database@229f66ed]" started-at="2025-09-20T21:05:18 EET" name="deletData" finished-at="2025-09-20T21:05:18 EET" duration-ms="0" status="SKIP">
+          <exception class="java.sql.SQLSyntaxErrorException">
+            <message>
+              <![CDATA[Unknown database 'classicmodel']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.sql.SQLSyntaxErrorException: Unknown database 'classicmodel'
+at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:839)
+at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:415)
+at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+at bigproject.Database.geturl(Database.java:28)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+at org.testng.TestRunner.run(TestRunner.java:612)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.sql.SQLSyntaxErrorException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletData -->
+        <test-method signature="readData()[pri:0, instance:bigproject.Database@229f66ed]" started-at="2025-09-20T21:05:18 EET" name="readData" finished-at="2025-09-20T21:05:18 EET" duration-ms="1" status="SKIP">
+          <exception class="java.sql.SQLSyntaxErrorException">
+            <message>
+              <![CDATA[Unknown database 'classicmodel']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.sql.SQLSyntaxErrorException: Unknown database 'classicmodel'
+at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:839)
+at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:415)
+at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+at bigproject.Database.geturl(Database.java:28)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+at org.testng.TestRunner.run(TestRunner.java:612)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.sql.SQLSyntaxErrorException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readData -->
+        <test-method signature="updateData()[pri:0, instance:bigproject.Database@229f66ed]" started-at="2025-09-20T21:05:18 EET" name="updateData" finished-at="2025-09-20T21:05:18 EET" duration-ms="0" status="SKIP">
+          <exception class="java.sql.SQLSyntaxErrorException">
+            <message>
+              <![CDATA[Unknown database 'classicmodel']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.sql.SQLSyntaxErrorException: Unknown database 'classicmodel'
+at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:839)
+at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:415)
+at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+at bigproject.Database.geturl(Database.java:28)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+at org.testng.TestRunner.run(TestRunner.java:612)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.sql.SQLSyntaxErrorException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateData -->
+      </class> <!-- bigproject.Database -->
+      <class name="bigproject.testbig">
+        <test-method is-config="true" signature="geturl()[pri:0, instance:bigproject.testbig@31e4bb20]" started-at="2025-09-20T21:05:18 EET" name="geturl" finished-at="2025-09-20T21:05:18 EET" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- geturl -->
+        <test-method signature="signup()[pri:1, instance:bigproject.testbig@31e4bb20]" started-at="2025-09-20T21:05:18 EET" name="signup" finished-at="2025-09-20T21:05:18 EET" duration-ms="0" status="SKIP">
+          <exception class="java.sql.SQLSyntaxErrorException">
+            <message>
+              <![CDATA[Unknown database 'classicmodel']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.sql.SQLSyntaxErrorException: Unknown database 'classicmodel'
+at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:839)
+at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:415)
+at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+at bigproject.Database.geturl(Database.java:28)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+at org.testng.TestRunner.run(TestRunner.java:612)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.sql.SQLSyntaxErrorException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signup -->
+        <test-method signature="logout()[pri:2, instance:bigproject.testbig@31e4bb20]" started-at="2025-09-20T21:05:18 EET" name="logout" finished-at="2025-09-20T21:05:18 EET" duration-ms="0" status="SKIP">
+          <exception class="java.sql.SQLSyntaxErrorException">
+            <message>
+              <![CDATA[Unknown database 'classicmodel']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.sql.SQLSyntaxErrorException: Unknown database 'classicmodel'
+at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:839)
+at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:415)
+at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+at bigproject.Database.geturl(Database.java:28)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+at org.testng.TestRunner.run(TestRunner.java:612)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.sql.SQLSyntaxErrorException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method signature="Login()[pri:3, instance:bigproject.testbig@31e4bb20]" started-at="2025-09-20T21:05:18 EET" name="Login" finished-at="2025-09-20T21:05:18 EET" duration-ms="0" status="SKIP">
+          <exception class="java.sql.SQLSyntaxErrorException">
+            <message>
+              <![CDATA[Unknown database 'classicmodel']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.sql.SQLSyntaxErrorException: Unknown database 'classicmodel'
+at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:839)
+at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:415)
+at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+at bigproject.Database.geturl(Database.java:28)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+at org.testng.TestRunner.run(TestRunner.java:612)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.sql.SQLSyntaxErrorException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="additmes()[pri:4, instance:bigproject.testbig@31e4bb20]" started-at="2025-09-20T21:05:18 EET" name="additmes" finished-at="2025-09-20T21:05:18 EET" duration-ms="0" status="SKIP">
+          <exception class="java.sql.SQLSyntaxErrorException">
+            <message>
+              <![CDATA[Unknown database 'classicmodel']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.sql.SQLSyntaxErrorException: Unknown database 'classicmodel'
+at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:839)
+at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:415)
+at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+at bigproject.Database.geturl(Database.java:28)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+at org.testng.TestRunner.run(TestRunner.java:612)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.sql.SQLSyntaxErrorException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- additmes -->
-        <test-method is-config="true" signature="After()[pri:0, instance:bigproject.testbig@2dd29a59]" started-at="2025-09-17T21:21:22 EET" name="After" finished-at="2025-09-17T21:21:22 EET" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="After()[pri:0, instance:bigproject.testbig@31e4bb20]" started-at="2025-09-20T21:05:18 EET" name="After" finished-at="2025-09-20T21:05:18 EET" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- After -->

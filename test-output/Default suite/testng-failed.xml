@@ -7,9 +7,26 @@
         <methods>
           <include name="additmes"/>
           <include name="geturl"/>
+          <include name="signup"/>
           <include name="After"/>
+          <include name="Login"/>
+          <include name="logout"/>
         </methods>
       </class> <!-- bigproject.testbig -->
+      <class name="bigproject.webelement">
+        <methods>
+          <include name="geturl"/>
+        </methods>
+      </class> <!-- bigproject.webelement -->
+      <class name="bigproject.Database">
+        <methods>
+          <include name="updateData"/>
+          <include name="CreateData"/>
+          <include name="geturl"/>
+          <include name="deletData"/>
+          <include name="readData"/>
+        </methods>
+      </class> <!-- bigproject.Database -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

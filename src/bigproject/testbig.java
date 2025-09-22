@@ -40,7 +40,7 @@ public class testbig extends data {
 		
 	}
     
-	@Test (priority = 1,enabled = false)
+	@Test (priority = 1,enabled = true)
 	public void signup () throws InterruptedException {
 		
 		
@@ -111,7 +111,7 @@ public class testbig extends data {
 	}
 
 	
-	@Test (priority = 2,enabled = false)
+	@Test (priority = 2,enabled = true)
 	
 	public  void logout () {
 		
@@ -132,7 +132,7 @@ public class testbig extends data {
 	}
 	
 	
-	@Test (priority = 3,enabled = false)
+	@Test (priority = 3,enabled = true)
 	
 	public void Login () {
 		
